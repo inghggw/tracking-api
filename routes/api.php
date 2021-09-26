@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TrackingUrlController;
 use App\Http\Controllers\TrackingPixelController;
 
 /*
@@ -16,4 +17,5 @@ use App\Http\Controllers\TrackingPixelController;
 
 Route::apiResources([
     'trackingPixel' => TrackingPixelController::class,
+    'trackingUrl' => TrackingUrlController::class,
 ]);
