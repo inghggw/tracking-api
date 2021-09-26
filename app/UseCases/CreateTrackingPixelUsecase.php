@@ -36,7 +36,7 @@ class CreateTrackingPixelUsecase implements CreateTrackingPixelInterface
     $hash = $this->hashUnique->handle('pixel');
 
     $trackingPixel = new TrackingPixel;
-    $trackingPixel->hashs = $hash;
+    $trackingPixel->hash = $hash;
     $trackingPixel->save();
 
     return $trackingPixel->toArray();
